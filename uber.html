@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project - Uber Clone</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>	
+			img {
+				width: 1067px;
+				height: 600px;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Panel UberClone Intro -->
+							<section class="panel color1 spotlight small center">
+								<div class="intro joined content span-7">
+									<h2 class="major">Uber Clone:</h2>
+									<b>
+										Here are some of the skills I used to create this project:
+									</b>
+								</div>
+							</section>
+
+							<!-- Mapkit -->
+							<section class="panel spotlight large left color1">
+								<div class="content span-6-5">
+									<h2>Mapkit:</h2>
+									<ul>
+										<li><b>Draw polylines from starting location to destination</b></li>
+										<li><b>Calculate route distance and implement a pricing model based on the distance and ride type</b></li>
+										<li><b>Location search</b></li>
+										<li><b>Access passenger and driver locations with CoreLocation</b></li>
+										<li><b>Display driver locations on map using custom annotations (only when signed in as a passenger)</b></li>
+										<li><b>Use a MapViewRepresentable which can be rendered in SwiftUI, allowing access to required UIKit functionality</b></li>
+									</ul>
+								</div>
+								<div class="inner">
+									<ul class="grid-icons three connected">
+										<li><img src="images/uber/uber_mapkit.gif"/></li>
+									</ul>
+								</div>
+							</section>
+
+							<section class="panel color1 large left">
+								<div class="intro joined content span-5">
+									<h2>Side Menu & Settings:</h2>
+									<ul>
+										<li><b>Sliding side Menu View</b></li>
+										<li><b>Settings List View</b></li>
+										<li><b>This is where users can save locations as their Home or Workplace and sign out of the app</b></li>
+									</ul>
+
+									<h2>Firebase:</h2>
+                                	<ul>
+										<li><b>User authentication</b></li>
+										<li><b>Storing and fetching data with Firestore database</b></li>
+										<li><b>Observe changes to specific fields in the database (SnapshotListener)</b></li>
+										<li><b>Differentiate between driver accounts and passenger accounts</b></li>
+									</ul>
+
+									<h2>Architecture:</h2>
+									<ul>
+										<li><b>MVVM</b></li>
+									</ul>
+								</div>
+								<div class="inner">
+									<ul class="grid-icons three connected">
+										<li><img src="images/uber/uber_sidemenu.gif"/></li>
+									</ul>
+								</div>
+							</section>
+
+							<section class="panel color1 large left">
+								<div class="intro joined content span-3-5">
+									<h2>SwiftUI & State Management:</h2>
+									<ul>
+										<li><b>Used enumerations to manage the state of the map and the state of a trip/ride</b></li>
+										<li><b>Dark Mode support</b></li>
+										<li><b>Refactored reusable views for cleaner, modularized code</b></li>
+										<li><b>Manage trip cancellation from either the driver or passenger</b></li>
+										<li><b>@Published and @Binding properties</b></li>
+										<li><b>.onReceive modifiers</b></li>
+									</ul>
+								</div>
+								<div class="inner">
+									<ul class="grid-icons three connected">
+										<li><img src="images/uber/uber_preview.gif"/></li>
+									</ul>
+								</div>
+							</section>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project - CryptoTracker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>	
+			img {
+				width: 1067px;
+				height: 600px;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Panel (Spotlight) Overview -->
+							<section class="panel spotlight small center">
+								<div class="content span-8">
+									<h2 class="major">CryptoTracker:</h2>
+                                    <br/>
+                                    <b style="padding-bottom: 75px;">
+                                        Uses the free version of the CoinGecko API.<br/><br/>
+                                        No third-party libraries were used. <br/><br/>
+                                        The following panels show some of the skills used to create this app.
+                                        <br/><br/>
+                                        <a href="https://github.com/DamienBabington/CryptoTracker-iOS" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    </b>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/gallery/fulls/06.jpg" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel (Spotlight) Skills Used -->
+                        <section class="panel spotlight large left">
+
+                            <!-- Networking -->
+                            <div class="content span-8-5">
+                                <h2>Networking:</h2>
+                                <ul>
+                                    <li><b>Async/await</b></li>
+                                    <li><b>Generics</b></li>
+                                    <li><b>JSON parsing</b></li>
+                                    <li><b>Custom error handling</b></li>
+                                    <li><b>URLComponents, CodingKeys</b></li>
+                                    <li><b>Completion handlers</b></li>
+                                  </ul>
+                                <b>For additional practice, I initially implemented the network calls using completion handlers, then I refactored them using async/await.</b><br/>
+                                <b>I used generics so I could fetch different types of data objects with just one function.</b>
+                            </div>
+
+                            <!-- Caching & SwiftUI -->
+                            <div class="content span-9">
+                                <h2>Caching:</h2>
+                                <b style="padding-bottom: 20px;">When the user navigates to the coin detail page, the coin’s data is cached which reduces network calls and data usage and improves memory and battery performance.</b>
+                                <h2>SwiftUI:</h2>
+                                <ul>
+                                    <li><b>List view</b></li>
+                                    <li><b>Pagination</b></li>
+                                    <li><b>Task modifiers</b></li>
+                                    <li><b>Image caching</b></li>
+                                </ul>
+                                <b style="padding-bottom: 10px;">Data for 20 crypto coins are loaded at a time. When the user scrolls to the bottom of the page, the next 20 coins will be fetched and displayed.</b>
+                            </div>
+
+                            <!-- Architecture, DI, Unit Testing -->
+                            <div class="content span-8">
+                                <h2>Architecture, DI, Unit Testing:</h2>
+                                <b>I used MVVM for increased modularization to facilitate unit testing.
+                                    <br/><br/>
+                                    Initializer dependency injection and protocol-oriented DI further facilitated this modularization. 
+                                    <br/><br/>
+                                    Implemented a Mock Service and mock data for various test cases using XCTAssert to ensure that data is being fetched, parsed, and formatted correctly. 
+                                    </b>
+                                <br/>
+                            </div>
+
+                            <div class="image filtered tinted" data-position="top right">
+                                <img src="images/pic03.jpg" alt="" />
+                            </div>
+                        </section>
+
+                        <!-- Screenshots -->
+                        <section class="panel spotlight medium">
+                            <div>
+                                <ul class="grid-icons three connected">
+                                    <li><img src="images/crypto/crypto_preview.gif"/></li>
+                                </ul>
+                            </div>
+                            <div class="image filtered tinted" data-position="top right">
+                                <img src="images/pic03.jpg" alt="" />
+                            </div>
+                        </section>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
