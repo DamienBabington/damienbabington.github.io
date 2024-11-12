@@ -25,6 +25,13 @@
 				}
 			}
 
+            @media screen and (max-width: 1650px) {
+				img {
+					width: 800px;
+					height: 450px;
+				}
+			}
+
 			@media screen and (max-width: 1500px) {
 				img {
 					width: 700px;
@@ -45,6 +52,42 @@
 					height: 281px;
 				}
 			}
+
+			@media screen and (max-width: 430px) {
+				img {
+					width: 400px;
+					height: 225px;
+				}
+
+				#headshot {
+					width: 100%;
+					height: 150%;
+				}
+
+				#introduction {
+					padding-top: 180px;
+				}
+
+				#ikitsuke_image {
+					position: relative;
+					right: 58px;
+				}
+
+				#uber_image {
+					position: relative;
+					right: 80px;
+				}
+
+				#crypto_image {
+					position: relative;
+					right: 55px;
+				}
+
+				#wtp_image {
+					position: relative;
+					right: 55px;
+				}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -57,14 +100,14 @@
 
 						<!-- Panel (Banner) Intro -->
 						<section class="panel banner right">
-							<div class="content color0 span-3-75">
+							<div id="introduction" class="content color0 span-3-75">
 								<h1 class="major">Hello, my name is<br />
 								Damien Babington</h1>
-								<b>I've been an iOS developer for 4 years. I'm a self-taught programmer who started learning Python to automate time-consuming tasks at work. After realizing the wide-ranging possibilities of software development, I decided to change careers.<br /><br />
-									Here is my portfolio of projects I've created.</b>
+								<b style="padding-right: 40px;">I've been an iOS developer for 4 years. I'm a self-taught programmer who started learning Python to automate time-consuming tasks at work. After realizing the wide-ranging possibilities of software development, I decided to change careers.<br /><br />
+									Here is the portfolio of projects I've created since then.</b>
 							</div>
 							<div class="image span-1-75" data-position="50% 75%">
-								<img src="images/dame.jpg" alt="" />
+								<img id="headshot" src="images/dame.jpg" alt="" />
 							</div>
 						</section>
 
@@ -72,14 +115,14 @@
 							<section class="panel spotlight large left" id="first">
 								<div class="content span-6">
 									<h2 class="major">Project: Ikitsuke</h2>
-									<b>The Ikitsuke app allows users to organize and save custom lists of their favorite places as well as create groups and events. 
+									<b style="padding-right: 40px;">The Ikitsuke app allows users to organize and save custom lists of their favorite places as well as create groups and events. 
 										<br/><br/>
 										I oversaw the creation of this app from the initial concept to its distribution to the App Store. I led the project management and personally developed the front-end.</b>
 									<a href="ikitsuke.html" class="button" style="margin-top: 26px; width: 180px;">More Details</a>
 								</div>
 								<div class="inner">
 									<ul class="grid-icons three connected">
-										<li><img src="images/ikitsuke/ikitsuke_preview.gif"/></li>
+										<li><img id="ikitsuke_image" src="images/ikitsuke/ikitsuke_preview.gif"/></li>
 									</ul>
 								</div>
 								<div class="image filtered tinted" data-position="top left">
@@ -91,12 +134,12 @@
 							<section class="panel color1 large left">
 								<div class="intro joined content span-3-5">
 									<h2 class="major">Project: Uber Clone</h2>
-									<b>I created this project to strengthen my skills with SwiftUI, Firebase, MapKit, state management, and more.</b>
+									<b style="padding-right: 30px;">I created this project to strengthen my skills with SwiftUI, Firebase, MapKit, state management, and more.</b>
 									<a href="uber.html" class="button" style="margin-top: 26px;">More Details</a>
 								</div>
 								<div class="inner">
 									<ul class="grid-icons three connected">
-										<li><img src="images/uber/uber_preview.gif"/></li>
+										<li><img id="uber_image" src="images/uber/uber_preview.gif"/></li>
 									</ul>
 								</div>
 							</section>
@@ -105,7 +148,7 @@
 							<section class="panel spotlight large left">
 								<div class="content span-6">
 									<h2 class="major">Project: CryptoTracker</h2>
-									<b> This app fetches data for the top cryptocurrencies and displays them in a list view (sorted by market cap). 
+									<b style="padding-right: 50px;"> This app fetches data for the top cryptocurrencies and displays them in a list view (sorted by market cap). 
 										<br/><br/>
 										Tapping a list item will present a detail page which displays information about the cryptocurrency.<br/><br/>
 										I created this app to strengthen my skills with networking, caching data, unit testing, SwiftUI, and more.
@@ -114,7 +157,7 @@
 								</div>
 								<div class="inner">
 									<ul class="grid-icons three connected">
-										<li><img src="images/crypto/crypto_preview02.gif"/></li>
+										<li><img id="crypto_image" src="images/crypto/crypto_preview02.gif"/></li>
 									</ul>
 								</div>
 								<div class="image filtered tinted" data-position="top right">
@@ -124,9 +167,9 @@
 
 						<!-- Panel WTP-->
 						<section class="panel spotlight large left">
-							<div class="content span-6">
+							<div class="content span-6-5">
 								<h2 class="major">Project: WTP</a></h2>
-								<b>This project was created to simplify the process of splitting the bill in Japanese restaurants where this is not the norm.<br/><br/>
+								<b style="padding-right: 50px;">This project was created to simplify the process of splitting the bill in Japanese restaurants where this is not the norm.<br/><br/>
 									Due to strict restrictions during COVID-19, this project was shut down prematurely, but it was still a great learning experience.
 									<br/><br/>
 									<h3>Skills used:</h3>
@@ -140,7 +183,7 @@
 							</div>
 							<div class="inner">
 								<ul class="grid-icons three connected">
-									<li><img src="images/wtp/wtp_preview.gif"/></li>
+									<li><img id="wtp_image" src="images/wtp/wtp_preview.gif"/></li>
 								</ul>
 							</div>
 							<div class="image filtered tinted" data-position="top right">

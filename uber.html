@@ -25,6 +25,13 @@
 				}
 			}
 
+            @media screen and (max-width: 1650px) {
+				img {
+					width: 800px;
+					height: 450px;
+				}
+			}
+
 			@media screen and (max-width: 1500px) {
 				img {
 					width: 700px;
@@ -45,6 +52,20 @@
 					height: 281px;
 				}
 			}
+
+			@media screen and (max-width: 430px) {
+				img {
+					width: 400px;
+					height: 225px;
+					position: relative;
+					right: 50px;
+				}
+
+                #intro, #mapkit, #sidemenu, #firebase, #swiftui { 
+                    padding-right: 50px;
+                }
+
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -59,7 +80,7 @@
 							<section class="panel color1 spotlight small center">
 								<div class="intro joined content span-7">
 									<h2 class="major">Uber Clone:</h2>
-									<b>
+									<b id="intro">
 										The following panels show some of the skills used to create this app.
 										<br/><br/>
 										<a href="https://github.com/DamienBabington/UberCloneSwiftUI" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -71,7 +92,7 @@
 							<section class="panel spotlight large left color1">
 								<div class="content span-6-5">
 									<h2>Mapkit:</h2>
-									<ul>
+									<ul id="mapkit">
 										<li><b>Draw polylines from starting location to destination</b></li>
 										<li><b>Calculate route distance and implement a pricing model based on the distance and ride type</b></li>
 										<li><b>Location search</b></li>
@@ -90,14 +111,14 @@
 							<section class="panel color1 large left">
 								<div class="intro joined content span-5">
 									<h2>Side Menu & Settings:</h2>
-									<ul>
+									<ul id="sidemenu">
 										<li><b>Sliding side Menu View</b></li>
 										<li><b>Settings List View</b></li>
 										<li><b>This is where users can save locations as their Home or Workplace and sign out of the app</b></li>
 									</ul>
 
 									<h2>Firebase:</h2>
-                                	<ul>
+                                	<ul id="firebase">
 										<li><b>User authentication</b></li>
 										<li><b>Storing and fetching data with Firestore database</b></li>
 										<li><b>Observe changes to specific fields in the database (SnapshotListener)</b></li>
@@ -119,7 +140,7 @@
 							<section class="panel color1 large left">
 								<div class="intro joined content span-3-5">
 									<h2>SwiftUI & State Management:</h2>
-									<ul>
+									<ul id="swiftui">
 										<li><b>Used enumerations to manage the state of the map and the state of a trip/ride</b></li>
 										<li><b>Dark Mode support</b></li>
 										<li><b>Refactored reusable views for cleaner, modularized code</b></li>

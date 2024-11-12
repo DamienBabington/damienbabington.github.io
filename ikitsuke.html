@@ -28,6 +28,13 @@
 				}
 			}
 
+            @media screen and (max-width: 1650px) {
+				img {
+					width: 800px;
+					height: 450px;
+				}
+			}
+
 			@media screen and (max-width: 1500px) {
 				img {
 					width: 700px;
@@ -47,7 +54,37 @@
 					width: 500px;
 					height: 281px;
 				}
+            
+            @media screen and (max-width: 430px) {
+				img {
+					width: 400px;
+					height: 225px;
+				}
+
+                #intro { 
+                    padding-right: 40px;
+                }
+
+                #place1, #curator, #places2, #groups, #skills, #examples {
+                    padding-right: 50px;
+                }
+
+                #image1 {
+                    position: relative;
+					right: 60px;
+                }
+
+                #image2 {
+                    position: relative;
+					right: 60px;
+                }
+
+                #image3 {
+                    position: relative;
+					right: 60px;
+                }
 			}
+		}
     </style>
 </head>
 
@@ -63,7 +100,7 @@
             <section class="panel spotlight small center">
                 <div class="content span-8">
                     <h2><a href="https://apps.apple.com/in/app/ikitsuke/id6578435292?platform=iphone" target="_blank" rel="noopener noreferrer">Ikitsuke:</a></h2>
-                    <b><br/>
+                    <b id="intro"><br/>
                         Available on the <a href="https://apps.apple.com/in/app/ikitsuke/id6578435292?platform=iphone" target="_blank" rel="noopener noreferrer">App Store</a> for iPhone and iPad.
                         <br/><br/>
                         This app has two overarching components: Places and Groups.
@@ -80,19 +117,19 @@
                 <!-- Places 1 -->
                 <div class="content span-5">
                     <h2>Place Lists:</h2>
-                    <ul>
+                    <ul id="place1">
                         <li><b>Create custom lists for favorite restaurants, cafes, lounges, and more</b></li>
                         <li><b>Make lists either public or private</b></li>
                         <li><b>Add places from Google Maps or from other users' lists</b></li>
                     </ul>
                     <h3>Curator Score:</h3>
-                    <ul>
+                    <ul id="curator">
                         <li><b>Gain recognition as an expert in your field based on how many times users have saved places from your lists</b></li>
                     </ul>
                 </div>
                 <div class="inner">
                     <ul class="grid-icons three connected">
-                        <li><img src="images/ikitsuke/ikitsuke_places01.gif"/></li>
+                        <li><img id="image1" src="images/ikitsuke/ikitsuke_places01.gif"/></li>
                     </ul>
                 </div>
                 <div class="image filtered tinted" data-position="top left">
@@ -105,7 +142,7 @@
                 <!-- Places 2 -->
                 <div class="content span-5-5">
                     <h2>Place Details:</h2>
-                    <ul>
+                    <ul id="places2">
                         <li><b>View lists in an interactive Map View</b></li>
                         <li><b>Write private notes or public reviews for each location</b></li>
                         <li><b>Upload your own photos to showcase your experiences</b></li>
@@ -115,7 +152,7 @@
                 </div>
                 <div class="inner">
                     <ul class="grid-icons three connected">
-                        <li><img src="images/ikitsuke/ikitsuke_places02.gif"/></li>
+                        <li><img id="image2" src="images/ikitsuke/ikitsuke_places02.gif"/></li>
                     </ul>
                 </div>
                 <div class="image filtered tinted" data-position="top left">
@@ -128,7 +165,7 @@
                 <!-- Groups 1 -->
                 <div class="content span-5">
                     <h2>Groups:</h2>
-                    <ul>
+                    <ul id="groups">
                         <li><b>Create groups and invite other users</b></li>
                         <li><b>Create events</b></li>
                         <li><b>Upload photos to an event so you can revisit that specific moment in time</b></li>
@@ -139,7 +176,7 @@
                 </div>
                 <div class="inner">
                     <ul class="grid-icons three connected">
-                        <li><img src="images/ikitsuke/ikitsuke_groups.gif"/></li>
+                        <li><img id="image3" src="images/ikitsuke/ikitsuke_groups.gif"/></li>
                     </ul>
                 </div>
                 <div class="image filtered tinted" data-position="top left">
@@ -148,7 +185,7 @@
             </section>
 
             <!-- Panel (Spotlight) Skills Used -->
-            <section class="panel spotlight large left">
+            <section id="skills" class="panel spotlight large left">
 
                 <!--  -->
                 <div class="content span-10">
@@ -213,7 +250,7 @@
                 </div>
             </section>
 
-            <section class="panel spotlight large left">
+            <section id="examples" class="panel spotlight large left">
                 <!-- Example Use Cases -->
                 <div class="content span-8">
                     <h1>Example Use Cases:</h1>
